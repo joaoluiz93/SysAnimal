@@ -1,0 +1,2 @@
+
+RewriteRule ^pagina/([a-z0-9-]+)$ ?page=$1

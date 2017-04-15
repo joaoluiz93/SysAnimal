@@ -1,0 +1,30 @@
+6 - 
+Sistema Cadastro de Animais
+(
+Login,
+Cadastro de Login,
+Cadastro do Animal,
+ Consultar por Raça ou Tipo de Animal, 
+Excluir e Editar
+)
+
+create database animais;
+use animais;
+create table usuario(
+    id_usuario int auto_increment,
+    nome varchar(40),
+    sobrenome varchar(100),
+    email varchar(50),
+    senha varchar(50),
+    primary key(id_usuario)
+);
+
+create table animal(
+  id_animal int auto_increment,
+  especie varchar(40),
+  raca varchar(40),
+  cor varchar(40),
+  peso varchar(20),
+  nome_dono varchar(100),
+  primary key(id_animal)
+);
